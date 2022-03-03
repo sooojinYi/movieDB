@@ -1,7 +1,8 @@
 @import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;900&display=swap");
 .App {
   text-align: center;
-  font-family: "Roboto Serif", sans-serif;
+  font-family: "Inconsolata", monospace;
 }
 
 .App-logo {
