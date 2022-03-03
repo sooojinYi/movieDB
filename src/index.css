@@ -1,13 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;900&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inconsolata", monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  display: block;
+}
+
+.list-inline-item .btn-outline-info {
+  color: #2e6ff2;
+  border: 1px solid #2e6ff2;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.list-inline-item .btn-outline-info:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+}
+.list-title {
+  color: #2e6ff2;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 0;
+}
+.btns {
+  opacity: 1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hoverImg {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+.hoverImg:hover {
+  opacity: 1;
 }

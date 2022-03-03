@@ -1,0 +1,10 @@
+.text-box {
+  text-align: left;
+}
+.movie-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+.movie-date {
+  margin-left: 15px;
+}

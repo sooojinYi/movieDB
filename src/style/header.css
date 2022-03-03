@@ -1,0 +1,32 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+#main-nav h1 {
+  color: #2e6ff2;
+  font-weight: 900;
+}
+#main-nav ul {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+#main-nav ul li {
+  font-size: 22px;
+  line-height: 1em;
+  color: #2e6ff2;
+  list-style: none;
+  font-weight: 900;
+  padding: 0;
+  text-align: center;
+  margin-left: 20px;
+}
