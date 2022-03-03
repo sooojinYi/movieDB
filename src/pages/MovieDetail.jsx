@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {
@@ -41,11 +41,10 @@ export function MovieDetail() {
   }, [params.id]);
 
   genres = detail.genres;
-  console.log(video);
 
   const MoviePlayerModal = (props) => {
     const youtubeUrl = `https://www.youtube.com/watch?v=`;
-    if (video == undefined) {
+    if (video === undefined) {
       return (
         <Modal
           {...props}
@@ -164,9 +163,6 @@ export function MovieDetail() {
       </div>
     );
   });
-  {
-    console.log(detail.backdrop_path, similarMovie);
-  }
   return (
     <div className="container">
       <Header />
@@ -324,7 +320,7 @@ export function MovieDetail() {
         </div>
       </div>
 
-      {similarMovie.length == 0 ? (
+      {similarMovie.length === 0 ? (
         <div className="row mt-5 center" style={{ fontWeight: 500 }}>
           <span>There is no Movies !</span>
         </div>

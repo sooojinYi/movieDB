@@ -3,34 +3,24 @@ import { GlobalContext } from "../context/GlobalState";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import styled from "styled-components";
-import "antd/dist/antd.css";
+
+const AddWatchlistButton = styled(Button)`
+  width: 200px;
+  height: 40px;
+`;
+
+const AddWatchedButton = styled(Button)`
+  width: 200px;
+  height: 40px;
+  margin-right: 10px;
+`;
+
+const PosterImg = styled.img`
+  margin: 0 auto;
+  margin-bottom: 60px;
+`;
 
 function ResultCard({ movie }) {
-  const AddWatchlistButton = styled(Button)`
-    width: 200px;
-    height: 40px;
-  `;
-
-  const AddWatchedButton = styled(Button)`
-    width: 200px;
-    height: 40px;
-    margin-right: 10px;
-  `;
-
-  const FillerPoster = styled(Link)`
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    height: 250px;
-    background-color: #eee;
-    margin: 0 auto;
-  `;
-
-  const PosterImg = styled.img`
-    margin: 0 auto;
-    margin-bottom: 60px;
-  `;
-
   const { addMovieToWatchlist, addMovieToWatched, watchlist, watched } =
     useContext(GlobalContext);
 

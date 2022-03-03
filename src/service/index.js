@@ -51,7 +51,6 @@ export const fetchMovies = async () => {
       },
     });
 
-    console.log(data);
     const posterUrl = `https://image.tmdb.org/t/p/original/`;
     const modifiedData = data["results"].map((m) => ({
       id: m["id"],

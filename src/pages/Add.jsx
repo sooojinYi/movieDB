@@ -4,8 +4,7 @@ import { searchMovies } from "../service";
 import ResultCard from "../components/ResultCard";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { Input, Divider } from "antd";
-import "antd/dist/antd.css";
+import { Input } from "antd";
 import styled from "styled-components";
 import "../style/add.css";
 const SearchInput = styled(Input)`

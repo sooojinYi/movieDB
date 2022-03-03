@@ -10,8 +10,6 @@ function CarouselSlide({ nowPlaying }) {
       autoPlay={true}
       autoFocus={true}
       interval={5000}
-      infiniteLoop={true}
-      interval={5000}
       swipeable={false}
       showStatus={false}
       showThumbs={false}
